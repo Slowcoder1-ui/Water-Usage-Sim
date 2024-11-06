@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Usage Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Water Usage Simulation</h1>
+        <form id="simulationForm">
+            <label for="energyType">Select Energy Type:</label>
+            <select id="energyType">
+                <option value="hydropower">Hydropower</option>
+                <option value="csp">Concentrated Solar Power (CSP)</option>
+                <option value="pv">Photovoltaic (PV)</option>
+            </select>
+
+            <label for="durationDays">Enter Duration (in days):</label>
+            <input type="number" id="durationDays" min="1" required>
+
+            <button type="button" onclick="runSimulation()">Run Simulation</button>
+        </form>
+
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
